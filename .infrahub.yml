@@ -60,12 +60,22 @@ artifact_definitions:
     targets: "all_topologies"
     transformation: "clab_topology"
 
-# check_definitions:
-#   - name: "check_device_topology"
-#     class_name: "InfrahubCheckDeviceTopology"
-#     file_path: "checks/check_device_topology.py"
+check_definitions:
+  - name: "check_device_topology"
+    class_name: "InfrahubCheckDeviceTopology"
+    file_path: "checks/check_device_topology.py"
 
 python_transforms:
   - name: OCInterfaces
     class_name: OCInterfaces
     file_path: "transforms/openconfig.py"
+
+schemas:
+  - "models/circuit.yml"
+  - "models/dcim.yml"
+  - "models/ipam.yml"
+  - "models/locations.yml"
+  - "models/organizations.yml"
+  - "models/routing.yml"
+  - "models/security.yml"
+  - "models/topology.yml"
