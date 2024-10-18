@@ -95,6 +95,9 @@ queries:
   - name: check_device_topology
     file_path: "checks/check_device_topology.gql"
 
+  - name: "topology_l2vpn"
+    file_path: "generators/topology_l2vpn.gql"
+
 generator_definitions:
   - name: "l2vpn_generator"
     file_path: "generators/l2vpn_generator.py"
