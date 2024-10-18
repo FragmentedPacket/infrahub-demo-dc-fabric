@@ -2,7 +2,7 @@ from typing import Dict
 
 from infrahub_sdk.generator import InfrahubGenerator
 
-from utils import create_and_save, populate_local_store
+# from utils import create_and_save, populate_local_store
 
 
 class L2VPNServiceGenerator(InfrahubGenerator):
